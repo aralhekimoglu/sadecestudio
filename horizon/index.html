@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #6C3AED, #3B82F6);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .nav-logo-text {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        .nav-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .nav-download {
+            background: #6C3AED;
+            color: #fff !important;
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-weight: 500;
+            transition: background 0.2s !important;
+        }
+
+        .nav-download:hover {
+            background: #5B21B6 !important;
+        }
+
+        /* Hero */
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            gap: 80px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 520px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #6C3AED;
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .hero-cta:hover {
+            background: #5B21B6;
+        }
+
+        .hero-cta svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .hero-visual {
+            flex: 0 0 auto;
+        }
+
+        .phone-mockup {
+            width: 280px;
+            height: 560px;
+            background: #1a1a1a;
+            border-radius: 40px;
+            border: 3px solid #333;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .phone-notch {
+            width: 120px;
+            height: 28px;
+            background: #0a0a0a;
+            border-radius: 0 0 16px 16px;
+            margin: 0 auto;
+        }
+
+        .phone-screen {
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .phone-screen p {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(180deg, #1a0a3e, #2d1173);
+            padding: 60px 48px 32px;
+            border-radius: 40px 40px 0 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section h4 {
+            color: #c4b5fd;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #e0d4ff;
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #8b7db8;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 24px;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 40px 24px;
+                text-align: center;
+                gap: 48px;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 40px 24px 24px;
+            }
+
+            .footer-content {
+                gap: 32px;
+            }
+
+            .footer-section {
+                min-width: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/horizon/" class="nav-logo">
+            <div class="nav-logo-icon">H</div>
+            <span class="nav-logo-text">Horizon</span>
+        </a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="/horizon/support">Support</a>
+            <a href="#download" class="nav-download">Download</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Your next favorite app.</h1>
+            <p>Horizon helps you do more with less. A simple, beautiful experience designed for the way you live.</p>
+            <a href="#download" class="hero-cta">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.97 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.89C10.1 6.87 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                </svg>
+                Download on iOS
+            </a>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <p>App screenshot</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Product</h4>
+                <a href="/horizon/">Home</a>
+                <a href="#about">About</a>
+                <a href="#download">Download</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="/horizon/support">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="/horizon/privacy">Privacy Policy</a>
+                <a href="/impressum">Impressum</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Gamze Sadece. All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
