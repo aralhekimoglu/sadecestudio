@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Horizon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #6C3AED, #3B82F6);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .nav-logo-text {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        .nav-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .nav-download {
+            background: #6C3AED;
+            color: #fff !important;
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-weight: 500;
+            transition: background 0.2s !important;
+        }
+
+        .nav-download:hover {
+            background: #5B21B6 !important;
+        }
+
+        /* Content */
+        .content {
+            flex: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 48px 100px;
+            width: 100%;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 40px;
+        }
+
+        .content h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #c0c0c0;
+            margin-bottom: 16px;
+        }
+
+        .content strong {
+            color: #fff;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+
+        .content ul li {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #c0c0c0;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        .content ul li::before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            color: #6C3AED;
+        }
+
+        .content a {
+            color: #8B5CF6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .content a:hover {
+            color: #a78bfa;
+        }
+
+        .highlight {
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 32px;
+        }
+
+        .highlight p {
+            color: #e0e0e0;
+            margin-bottom: 0;
+            font-size: 17px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(180deg, #1a0a3e, #2d1173);
+            padding: 60px 48px 32px;
+            border-radius: 40px 40px 0 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section h4 {
+            color: #c4b5fd;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #e0d4ff;
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #8b7db8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 24px;
+            }
+
+            .content {
+                padding: 40px 24px 80px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+
+            footer {
+                padding: 40px 24px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/horizon/" class="nav-logo">
+            <div class="nav-logo-icon">H</div>
+            <span class="nav-logo-text">Horizon</span>
+        </a>
+        <div class="nav-links">
+            <a href="/horizon/contact.html">Contact</a>
+            <a href="https://apps.apple.com/us/app/luna-budgeting-app/id6504741176" class="nav-download" target="_blank" rel="noopener">Download</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Privacy Policy</h1>
+
+        <p>Horizon Personal Finances ("Horizon", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains our practices regarding the collection, use, and disclosure of your information.</p>
+
+        <div class="highlight">
+            <p><strong>The short version: We do not collect, store, or share your personal data.</strong></p>
+        </div>
+
+        <h2>Data Storage and Syncing (iCloud)</h2>
+        <p>Horizon is designed with privacy at its core. All of your financial data, accounts, and transactions are stored locally on your device.</p>
+        <ul>
+            <li>If you have iCloud enabled on your device, the App uses Apple's native SwiftData and CloudKit services to sync your data securely across your personal devices.</li>
+            <li><strong>We have absolutely no access to this data.</strong> It is encrypted and stored in your private iCloud account, governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>In-App Purchases (Tip Jar)</h2>
+        <p>If you choose to support the development of Horizon through our "Tip Jar," the transaction is processed entirely by Apple's App Store (StoreKit).</p>
+        <ul>
+            <li>We do not collect, process, or have access to your credit card information, billing address, or name.</li>
+            <li>We only receive an anonymous receipt from Apple to confirm the transaction was successful.</li>
+        </ul>
+
+        <h2>Analytics and Tracking</h2>
+        <p>We do not use any third-party analytics tools (like Google Analytics), crash reporters, or advertising frameworks.</p>
+        <ul>
+            <li>The App contains no tracking software.</li>
+            <li>We do not track your behavior across other apps or websites.</li>
+            <li>We do not use cookies.</li>
+        </ul>
+
+        <h2>User Rights (GDPR / DSGVO)</h2>
+        <p>Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, or erase your personal data. Because we do not collect or store any of your data on our servers, we cannot execute these requests on your behalf. You have full control over your data:</p>
+        <ul>
+            <li><strong>To export or view your data:</strong> You can view all data directly within the App.</li>
+            <li><strong>To delete your data:</strong> Simply delete the App from your device. To remove synced data from Apple's servers, manage your iCloud storage settings directly in your iOS Settings app.</li>
+        </ul>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Product</h4>
+                <a href="/horizon/">Home</a>
+                <a href="https://apps.apple.com/us/app/luna-budgeting-app/id6504741176" target="_blank" rel="noopener">Download</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="/horizon/contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="/horizon/privacy.html">Privacy Policy</a>
+                <!-- <a href="/impressum.html">Impressum</a> -->
+                <a href="/horizon/disclaimer.html">Disclaimer</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Gamze Sadece. All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>

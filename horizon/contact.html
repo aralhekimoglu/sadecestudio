@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizon</title>
+    <title>Contact - Horizon</title>
     <style>
         * {
             margin: 0;
@@ -20,7 +20,6 @@
             flex-direction: column;
         }
 
-        /* Navigation */
         nav {
             display: flex;
             align-items: center;
@@ -86,98 +85,60 @@
             background: #5B21B6 !important;
         }
 
-        /* Hero */
-        .hero {
+        .content {
             flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 80px 48px;
-            max-width: 1200px;
+            max-width: 720px;
             margin: 0 auto;
+            padding: 60px 48px 100px;
             width: 100%;
-            gap: 80px;
         }
 
-        .hero-text {
-            flex: 1;
-            max-width: 520px;
-        }
-
-        .hero-text h1 {
-            font-size: 52px;
+        .content h1 {
+            font-size: 40px;
             font-weight: 700;
-            line-height: 1.1;
             letter-spacing: -0.03em;
             margin-bottom: 24px;
         }
 
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #a0a0a0;
-            margin-bottom: 40px;
+        .content p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #c0c0c0;
+            margin-bottom: 16px;
         }
 
-        .hero-cta {
+        .content a {
+            color: #8B5CF6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .content a:hover {
+            color: #a78bfa;
+        }
+
+        .email-card {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            background: #6C3AED;
-            color: #fff;
-            padding: 16px 32px;
-            border-radius: 100px;
-            text-decoration: none;
-            font-size: 16px;
+            gap: 12px;
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 20px 28px;
+            margin-top: 8px;
+        }
+
+        .email-card svg {
+            width: 24px;
+            height: 24px;
+            color: #6C3AED;
+        }
+
+        .email-card a {
+            font-size: 18px;
             font-weight: 500;
-            transition: background 0.2s;
         }
 
-        .hero-cta:hover {
-            background: #5B21B6;
-        }
-
-        .hero-cta svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .hero-visual {
-            flex: 0 0 auto;
-        }
-
-        .phone-mockup {
-            width: 280px;
-            height: 560px;
-            background: #1a1a1a;
-            border-radius: 40px;
-            border: 3px solid #333;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
-        }
-
-        .phone-notch {
-            width: 120px;
-            height: 28px;
-            background: #0a0a0a;
-            border-radius: 0 0 16px 16px;
-            margin: 0 auto;
-        }
-
-        .phone-screen {
-            padding: 20px;
-            color: #666;
-            font-size: 14px;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .phone-screen p {
-            color: #555;
-        }
-
-        /* Footer */
         footer {
             background: linear-gradient(180deg, #1a0a3e, #2d1173);
             padding: 60px 48px 32px;
@@ -226,37 +187,21 @@
             font-size: 14px;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             nav {
                 padding: 16px 24px;
             }
 
-            .hero {
-                flex-direction: column;
-                padding: 40px 24px;
-                text-align: center;
-                gap: 48px;
+            .content {
+                padding: 40px 24px 80px;
             }
 
-            .hero-text h1 {
-                font-size: 36px;
-            }
-
-            .hero-text p {
-                font-size: 16px;
+            .content h1 {
+                font-size: 28px;
             }
 
             footer {
                 padding: 40px 24px 24px;
-            }
-
-            .footer-content {
-                gap: 32px;
-            }
-
-            .footer-section {
-                min-width: 140px;
             }
         }
     </style>
@@ -274,24 +219,16 @@
         </div>
     </nav>
 
-    <main class="hero">
-        <div class="hero-text">
-            <h1>Your next favorite app.</h1>
-            <p>Horizon helps you do more with less. A simple, beautiful experience designed for the way you live.</p>
-            <a href="https://apps.apple.com/us/app/luna-budgeting-app/id6504741176" class="hero-cta" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.97 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.89C10.1 6.87 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
-                </svg>
-                Download on iOS
-            </a>
-        </div>
-        <div class="hero-visual">
-            <div class="phone-mockup">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                    <p>App screenshot</p>
-                </div>
-            </div>
+    <main class="content">
+        <h1>Contact</h1>
+        <p>Have a question, feedback, or need help with Horizon? Reach out to us and we'll get back to you as soon as possible.</p>
+
+        <div class="email-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 4L12 13L2 4"/>
+            </svg>
+            <a href="mailto:support@gamzesadece.com">support@gamzesadece.com</a>
         </div>
     </main>
 
