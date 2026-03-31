@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sadece Studio</title>
+    <link rel="icon" type="image/jpeg" href="/assets/images/gamze_and_aral.jpeg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .nav-logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 48px 100px;
+            width: 100%;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #c0c0c0;
+            margin-bottom: 16px;
+        }
+
+        .content a {
+            color: #8B5CF6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .content a:hover {
+            color: #a78bfa;
+        }
+
+        .sign-off {
+            margin-top: 16px;
+            font-style: italic;
+            color: #a0a0a0;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #1a0a3e, #2d1173);
+            padding: 60px 48px 32px;
+            border-radius: 40px 40px 0 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section h4 {
+            color: #c4b5fd;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #e0d4ff;
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #8b7db8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 24px;
+            }
+
+            .content {
+                padding: 40px 24px 80px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+
+            footer {
+                padding: 40px 24px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="nav-logo">Sadece Studio</a>
+        <div class="nav-links">
+            <a href="/horizon/">Apps</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>About Us</h1>
+        <p>Hi, we are Gamze and Aral — a husband-and-wife team based in Munich, Germany.</p>
+        <p>We started Sadece Studio because we were tired of apps that spy on you, confuse you, or nickel-and-dime you into a subscription you didn't want.</p>
+        <p>We are just two people building beautiful, privacy-first tools to help you take back control of your digital life. We build tools that prioritize beautiful design, intuitive simplicity, and absolute data sovereignty.</p>
+        <p>Our first release, <a href="/horizon/">Horizon</a>, is a perfect example of this philosophy. We don't require accounts, we don't run analytics, and we don't touch your financial data. Everything stays encrypted in your own iCloud.</p>
+        <p>Horizon is our first app. It won't be our last.</p>
+        <p>Thank you for supporting indie software.</p>
+        <p class="sign-off">— Gamze & Aral</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Socials</h4>
+                <a href="https://instagram.com/gamze.sadece" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://tiktok.com/@gamze.sadece" target="_blank" rel="noopener">TikTok</a>
+                <a href="https://youtube.com/@gamze.sadece" target="_blank" rel="noopener">YouTube</a>
+            </div>
+            <div class="footer-section">
+                <h4>Apps</h4>
+                <a href="/horizon/">Horizon</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="/legal/imprint.html">Imprint</a>
+                <a href="/legal/privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Sadece Studio. All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>

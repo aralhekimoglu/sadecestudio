@@ -33,11 +33,21 @@
         }
 
         .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 22px;
             font-weight: 700;
             letter-spacing: -0.02em;
             text-decoration: none;
             color: #fff;
+        }
+
+        .nav-logo-photo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         .nav-links {
@@ -183,12 +193,8 @@
         .creator-avatar {
             width: 56px;
             height: 56px;
-            background: linear-gradient(135deg, #E1306C, #F77737, #FCAF45);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+            object-fit: cover;
             flex-shrink: 0;
         }
 
@@ -331,10 +337,14 @@
 <body>
 
     <nav>
-        <a href="/" class="nav-logo">Sadece Studio</a>
+        <a href="/" class="nav-logo">
+            <img src="/assets/images/gamze_and_aral.jpeg" alt="Gamze & Aral" class="nav-logo-photo">
+            Sadece Studio
+        </a>
         <div class="nav-links">
             <a href="#apps">Apps</a>
             <a href="#creator">Creator</a>
+            <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
         </div>
     </nav>
@@ -364,7 +374,7 @@
         <section class="section" id="creator">
             <h2>Creator</h2>
             <a href="/gamze/" class="creator-card">
-                <div class="creator-avatar">G</div>
+                <img src="/assets/images/gamze.jpeg" alt="Gamze" class="creator-avatar">
                 <div class="creator-info">
                     <h3>@gamze.sadece</h3>
                     <p>Food, lifestyle &amp; life in Germany.</p>
